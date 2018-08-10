@@ -15,7 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'A great attitude becomes a great day which becomes a great month which becomes a great year and eventually becomes a great life','Quite an inspiring quote'),
     
   ]
-  
+  toogleDetails(index){
+    this.quotes[index].showDescription=!this.quotes[index].showDescription;
+  }
   constructor() { }
   
   ngOnInit() {
