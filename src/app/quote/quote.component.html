@@ -1,58 +1,18 @@
-<h1>QUOTES</h1>
+<h1>Quotes</h1>
 <div class="container">
+  <div class="row">
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  </div>
+  <div class="row" *ngFor="let quote of quotes;let i = 'index'">
     <div class="row">
-        <app-goal-form></app-goal-form>
-    </div>
-</div>
-<style>
-    h1{
-      text-align: center;
-      font-style: italic;
-      font-size: 60px;
-    }
-    h4{
-      font-size: 25px;
-    }
-  </style>
-<hr>
-<div class="container">
-    <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-        <div class="row">
-            <h4 id="{{i}}">{{quote.name}} <b>posted on :{{quote.quoteDate|date}}</b></h4>
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Show Details</button>
-        </div>
-        
-        <div class="row" *ngIf="quote.showDescription">
-        <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+      <h4 id="{{i}}" >{{quote.name}} posted on {{quote.quoteDate|date|uppercase}}</h4>
+      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
     </div>
     
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-<!-- <h1>QUOTES</h1>
-<style>
-  h1{
-    text-align: center;
-    font-style: italic;
-    font-size: 60px;
-  }
-</style>
-<hr>
-<ul>
-  <div class="row" *ngFor="let quote of quotes;let i = 'index'"></div>
-  <div class="row">
-
+    <div class="row" *ngIf="quote.showDescription">
+      <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+    </div>
+    
   </div>
-    <li id="{{i}}">{{quote.name}} <b>posted on :{{quote.quoteDate|date}}</b></li>
-    <button (click)='toogleDetails(i)'>Show Details</button>
-    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-  </div>
-</ul> -->
+  
+</div>
