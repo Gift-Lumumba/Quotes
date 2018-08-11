@@ -5,7 +5,7 @@
   </div>
   <div class="row" *ngFor="let quote of quotes;let i = 'index'">
     <div class="row">
-      <h4 id="{{i}}" >{{quote.name}} posted on {{quote.quoteDate|date|uppercase}}</h4>
+      <h4 id="{{i}}" >{{quote.name}} posted on <b>{{quote.quoteDate|date}}</b></h4>
       <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
     </div>
     

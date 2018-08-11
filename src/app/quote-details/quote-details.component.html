@@ -1,3 +1,6 @@
-<p>{{quote.description}}</p>
-<p>Quote posted {{quote.quoteDate|dateCount}} days ago</p>
+<p class="by"><b>{{quote.description}}</b></p>
+<br>
+<p><b>Quote posted {{quote.quoteDate|dateCount}} days ago</b></p>
+<br>
 <button class="btn btn-danger" (click) = 'quoteDelete(true)'> Delete Quote </button>
+<br>
