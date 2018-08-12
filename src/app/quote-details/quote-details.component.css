@@ -4,11 +4,18 @@ p{
 .by{
   font-size: 20px;
   float: left;
+  font-style: 'Oleo Script', cursive;
+  color: whitesmoke;
 }
 #btn{
   font-size: 15px;
+  padding-right:100px; 
+  float: left;
+  text-align: left;
 }
 .quote{
   font-size: 16px;
-  font-style: italic;
+  font-style: 'Oleo Script', cursive;
+  color: whitesmoke;
+
 }

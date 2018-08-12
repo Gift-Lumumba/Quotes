@@ -1,15 +1,35 @@
-.form{
+.container{
   font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 500px;
+  text-align: center;
 }
 #quote{
-  font-size: 35px;
+  font-size: 25px;
+  color: whitesmoke;
 }
 #author{
-  font-size: 35px;
+  font-size: 25px;
+  color: whitesmoke;
+  
 }
 #submit{
-  font-size: 35px;
+  font-size: 25px;
+  color: whitesmoke;
+  
+}
+#submitby{
+  color: whitesmoke;
+  font-size: 25px;
 }
 #submitbtn{
-  font-size: 15px;
+  font-size: 20px;
+}
+.form-group{
+  font-size: 40px;
+}
+input{
+  height: 60px;
+  color: red;
 }

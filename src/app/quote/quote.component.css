@@ -1,8 +1,9 @@
+
 h1{
   text-align: center;
-  font-size: 50px;
-  color: red;
-  font-style: italic;
+  font-size: 70px;
+  color: rgb(231, 7, 7);
+  font-family: 'Racing Sans One', cursive;
   text-decoration-line: underline;
 }
 #buttons{
@@ -11,8 +12,10 @@ h1{
   padding-bottom: 20px;
   padding-right: 500px;
 }
-.h4{
-  font-size: 20px;
+#h4{
+  font-size: 24px;
+  font-family: 'Oleo Script', cursive;
+  color: whitesmoke;
 }
 #button{
   font-size: 15px;

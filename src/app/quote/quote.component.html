@@ -1,31 +1,27 @@
-<h1>Quotes</h1>
-<div class="container">
-  <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-  </div>
-  <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-    <div class="row">
-      <h4 id="{{i}}" class="h4">{{quote.name}} posted on <b>{{quote.quoteDate|date}} &nbsp;&nbsp;</b></h4>
-      <div id="buttons">
-        <br>
-        <button class="btn btn-warning" id="button"(click)='toogleDetails(i)'>
-          Details
-        </button>
-        &nbsp;
-        <a href="#" class="btn btn-success btn-lg">
-          <span class="glyphicon glyphicon-thumbs-up"></span> Upvote
-        </a>
-        &nbsp;
-        <a href="#" class="btn btn-danger btn-lg">
-          <span class="glyphicon glyphicon-thumbs-down"></span> Downvote
-        </a>
-        &nbsp;
+ <div class="container">
+  
+  <h1>Quotes</h1>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  <ul>
+    <div *ngFor="let quote of quotes;let i=index">
+      <div class="row">
+        <div id="buttons">
+          <br>
+          <li id="h4">"{{quote.name}}" -<em><strong>Posted {{quote.quoteDate|dateCount}} days ago.</strong></em></li>
+          <br>
+          <button class="btn btn-warning" id="button"(click)='toogleDetails(i)'>
+              Details
+            </button>
+            &nbsp;&nbsp;
+          <button (click)='upvote(i)' class="btn btn-primary btn-lg"><i class="fa fa-thumbs-o-up"></i>Upvote {{quote.upvotes}}</button>&nbsp;&nbsp;
+          <button (click)='downvote(i)' class="btn btn-danger btn-lg"><i class="fa fa-thumbs-o-down"></i> Downvote {{quote.downvotes}} </button>
+          <br>
+
+          <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </div>
+        </div>
       </div>
-    </div>
-    <div class="row" *ngIf="quote.showDescription">
-      <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-    </div>
-    
+    </ul>
   </div>
   
-</div>
+  

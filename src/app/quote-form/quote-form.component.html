@@ -1,42 +1,19 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 form">
-          <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-              <!-- Quote Input-->
-              <div class="form-group">
-                  <label for="quote"><b>Quote:</b></label>
-                  <textarea class="form-control" id="quote" rows="3" [(ngModel)]="newQuote.quote" name="quote" #author="ngModel" required></textarea>
-                  
-                  <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-                      <p> Quote is Required</p>
-                      
-                  </div>
-              </div>
-              <!-- Author Input -->
-              <div class="form-group">
-                  <label for="author"><b>Author:</b></label>
-                  <textarea class="form-control" id="author" rows="1" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required></textarea>
-                  <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                      <p> Name of Author is Required</p>
-                      
-                  </div>
-                  
-              </div>
-              <!-- Submision Input -->
-              <div class="form-group">
-                  <label for="submit"><b>Submit By:</b></label>
-                  <textarea class="form-control" id="submit" rows="1" [(ngModel)]="newQuote.submit" name="submit" #submit="ngModel" required></textarea>
-                  <div [hidden]="submit.valid || submit.pristine" class="alert alert-danger">
-                      <p> Name of Person who submitted is Required</p>
-                      
-                  </div>
-              </div>
-              <button type="Submit" class="btn btn-success btn-lg" id="submitbtn">Submit Quote</button>
-          </form>
-          <br>
-          <br>
-          <br>
-      </div>
-    </div>
+<div class="container">
+    <form (ngSubmit)="submitQuote()"  #quoteForm='ngForm'>
+        <div class="form-group">
+            <label for="quote" id="quote">Enter Quote:</label>
+            <textarea class="form-control" id="name" rows="6"  [(ngModel)]="newQuote.name" name="name"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="author" id="author">Author:</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="name">
+        </div>
+        <div class="form-group">
+            <label for="submitby" id="submitby"class="submitby">Submit By:</label>
+            <input type="text" class="form-control" id="submitby" [(ngModel)]="newQuote.submit" name="name">
+        </div>
+        <button type="submit" class="btn btn-success btn-lg" id="submitbtn">Submit Quote</button>
+        
+    </form>
+    
 </div>
-
