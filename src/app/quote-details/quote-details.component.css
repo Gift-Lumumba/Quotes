@@ -5,3 +5,10 @@ p{
   font-size: 20px;
   float: left;
 }
+#btn{
+  font-size: 15px;
+}
+.quote{
+  font-size: 16px;
+  font-style: italic;
+}

@@ -5,10 +5,23 @@
   </div>
   <div class="row" *ngFor="let quote of quotes;let i = 'index'">
     <div class="row">
-      <h4 id="{{i}}" >{{quote.name}} posted on <b>{{quote.quoteDate|date}}</b></h4>
-      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+      <h4 id="{{i}}" class="h4">{{quote.name}} posted on <b>{{quote.quoteDate|date}} &nbsp;&nbsp;</b></h4>
+      <div id="buttons">
+        <br>
+        <button class="btn btn-warning" id="button"(click)='toogleDetails(i)'>
+          Details
+        </button>
+        &nbsp;
+        <a href="#" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Upvote
+        </a>
+        &nbsp;
+        <a href="#" class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-thumbs-down"></span> Downvote
+        </a>
+        &nbsp;
+      </div>
     </div>
-    
     <div class="row" *ngIf="quote.showDescription">
       <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
