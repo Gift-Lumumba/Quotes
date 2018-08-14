@@ -6,19 +6,19 @@ This project was generated on 10th August 2018 with [Angular CLI](https://gift-l
 This is an application where one can create quotes and have them voted on.
 
 ## How It Works
-*Application users can add a quote,the name of the author and submit their quote.*
-*Users can rate a quote by either upvoting it or downvoting it.*
-*Users can know the time that has passed since a quote was created.*
+- Application users can add a quote,the name of the author and submit their quote.
+- Users can rate a quote by either upvoting it or downvoting it.
+- Users can know the time that has passed since a quote was created.
 
 ## Technologies Used
 This application was created using Angular CLI version 6.1.2 and visual studio code text editor.
 
 ## How to Install Application
-Create Directory to store Application
-Initialise git using the ($git init) command
-Run git clone https://gift-lumumba.github.io/Quotes/
-Navigate to created directory
-Open in your prefered text editor(atom,visual studio code or sublime text)
+- Create Directory to store Application
+- Initialise git using the ($git init) command
+- Run git clone https://gift-lumumba.github.io/Quotes/
+- Navigate to created directory
+- Open in your prefered text editor(atom,visual studio code     or sublime text)
 
 ## Link to Deployed Page
 Here's the link to my live site:https://gift-lumumba.github.io/Quotes/
