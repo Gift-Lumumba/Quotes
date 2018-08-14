@@ -13,8 +13,8 @@
               Details
             </button>
             &nbsp;&nbsp;
-          <button (click)='upvote(i)' class="btn btn-primary btn-lg"><i class="fa fa-thumbs-o-up"></i> Upvote {{quote.upvotes}}</button>&nbsp;&nbsp;
-          <button (click)='downvote(i)' class="btn btn-danger btn-lg"><i class="fa fa-thumbs-o-down"></i> Downvote {{quote.downvotes}} </button>
+          <button (click)='upvote(i)' class="btn btn-primary btn-lg"><i class="fa fa-thumbs-o-up fa-lg" ></i>  {{quote.upvotes}}</button>&nbsp;&nbsp;
+          <button (click)='downvote(i)' class="btn btn-danger btn-lg"><i class="fa fa-thumbs-o-down fa-lg"></i>  {{quote.downvotes}} </button>
           <br>
 
           <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
