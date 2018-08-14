@@ -16,7 +16,6 @@
 }
 #submit{
   font-size: 25px;
-  color: whitesmoke;
   
 }
 #submitby{
@@ -31,5 +30,19 @@
 }
 input{
   height: 60px;
+}
+#name{
+  font-size: 18px;
+  background: black;
+  color: red;
+}
+#authorr{
+  font-size: 18px;
+  background: black;
+  color: red;
+}
+#submitbyy{
+  font-size: 18px;
+  background: black;
   color: red;
 }
