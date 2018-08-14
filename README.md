@@ -21,7 +21,7 @@ This application was created using Angular CLI version 6.1.2 and visual studio c
 - Open in your prefered text editor(atom,visual studio code     or sublime text)
 
 ## Link to Deployed Page
-Here's the link to my live site:https://gift-lumumba.github.io/Quotes/
+https://gift-lumumba.github.io/Quotes/
 
 ## Support and Contact Details
 For any comments,suggestions or inquiries,Contact me via email:giftlumumba2@gmail.com
