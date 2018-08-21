@@ -7,7 +7,7 @@
       <div class="row">
         <div id="buttons">
           <br>
-          <li id="h4">"{{quote.name}}" -<em><strong>Posted {{quote.quoteDate|dateCount}} days ago.</strong></em></li>
+          <li id="h4">"{{quote.name}}" -<em><strong>Posted on: {{quote.quoteDate|date}}.</strong></em></li>
           <br>
           <button class="btn btn-warning" id="button"(click)='toogleDetails(i)'>
               Details
