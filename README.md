@@ -11,14 +11,19 @@ This is an application where one can create quotes and have them voted on.
 - Users can know the time that has passed since a quote was created.
 
 ## Technologies Used
-This application was created using Angular CLI version 6.1.2 and visual studio code text editor.
+This application was created using:
+- Angular CLI version 6.1.2.
+- HTML 5.
+- Bootstrap 4.1.3.
+- CSS.
+- Visual Studio Code text editor.
 
 ## How to Install Application
-- Create Directory to store Application
-- Initialise git using the ($git init) command
-- Run git clone https://gift-lumumba.github.io/Quotes/
-- Navigate to created directory
-- Open in your prefered text editor(atom,visual studio code     or sublime text)
+- Create Directory to store Application.
+- Initialise git using the `$ git init` command.
+- On your terminal,Run `git clone https://gift-lumumba.github.io/Quotes/`
+- Navigate to created directory.
+- Open in your prefered text editor(atom,visual studio code or sublime text)
 
 ## Link to Deployed Page
 https://gift-lumumba.github.io/Quotes/
